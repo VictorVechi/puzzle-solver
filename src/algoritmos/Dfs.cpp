@@ -21,7 +21,7 @@ void DFS::dfs(Board estadoInicial, bool showPath) {
         Board estadoAtual = pilhaEstados.top();
         pilhaEstados.pop();
 
-        if(estadoAtual.ehObjetivo()) {
+        if(estadoAtual.isObjective()) {
             vector<Board> caminho;
             // Reconstrói o caminho da solução
             for(Board estado = estadoAtual; estado != estadoInicial; estado = mapaPais[estado]) {

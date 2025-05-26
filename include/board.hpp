@@ -16,7 +16,7 @@ class Board {
         bool operator<(const Board& outro) const;
         bool operator!=(const Board& outro) const;
         void imprimirTabuleiro() const;
-        bool ehObjetivo();
+        bool isObjective();
         void trocarComBranco(vector<vector<int>>& matriz, int novoX, int novoY);
         vector<Board> obterEstadosPossiveis();
         vector<vector<int>> getTabuleiro() const;

@@ -44,7 +44,7 @@ void Board::imprimirTabuleiro() const {
     }
 }
 
-bool Board::ehObjetivo() {
+bool Board::isObjective() {
     vector<vector<int>> objetivo = {
         {0, 1, 2},
         {3, 4, 5},

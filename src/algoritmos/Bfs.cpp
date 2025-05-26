@@ -27,7 +27,7 @@ void BFS::bfs(Board estadoInicial, bool showPath) {
         Board estadoAtual = fila.front();
         fila.pop();
 
-        if (estadoAtual.ehObjetivo()) {
+        if (estadoAtual.isObjective()) {
             vector<Board> caminho;
             // Reconstrói o caminho da solução
             for (Board estado = estadoAtual; estado != estadoInicial; estado = pais[estado]) {
